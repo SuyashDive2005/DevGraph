@@ -1,0 +1,24 @@
+# Environment & secrets
+.env
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+# Data directories (gitignored as per Section 6)
+data/
+data/repos/
+data/chroma/
+data/evolution.sqlite
+data/llm_cache/
+data/github/
+data/neo4j/
+
+# Test & coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Results & outputs
+results/*.csv
+results/*.png

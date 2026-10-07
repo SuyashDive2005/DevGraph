@@ -1,0 +1,46 @@
+# DevGraph Target Repository Configuration (Section 8.0.1)
+# Selection criteria:
+# - Language: Python (pure / primary)
+# - Code size: 10K - 150K LOC
+# - History: >= ~800 commits
+# - Artifacts: tests/ folder present, docs/ present (or comprehensive README + docs), active issues/PRs
+# - Pilot repo (Week 1-4): pallets/click (compact, clean, well-tested CLI framework)
+# - Secondary candidate (Week 5+): psf/requests (pervasive HTTP library)
+
+pilot:
+  name: click
+  owner: pallets
+  url: "https://github.com/pallets/click.git"
+  github_id: "pallets/click"
+  language: "Python"
+  estimated_loc: 18000
+  estimated_commits: 2300
+  license: "BSD-3-Clause"
+  test_dir: "tests"
+  docs_dir: "docs"
+  notes: "Selected as primary pilot repository for early pipeline validation."
+
+secondary_candidates:
+  - name: requests
+    owner: psf
+    url: "https://github.com/psf/requests.git"
+    github_id: "psf/requests"
+    language: "Python"
+    estimated_loc: 13000
+    estimated_commits: 6500
+    license: "Apache-2.0"
+    test_dir: "tests"
+    docs_dir: "docs"
+    notes: "High commit density and extensive issue history."
+
+  - name: flask
+    owner: pallets
+    url: "https://github.com/pallets/flask.git"
+    github_id: "pallets/flask"
+    language: "Python"
+    estimated_loc: 15000
+    estimated_commits: 4600
+    license: "BSD-3-Clause"
+    test_dir: "tests"
+    docs_dir: "docs"
+    notes: "Standard web framework reference repository."
